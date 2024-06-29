@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #e1e1e1;
+  --secondary-color: white;
+  --tertiary-color: #2980b9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  border: none;
+  outline: none;
+}
+body {
+  background-color: var(--primary-color);  
+}
+.layout {
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background-color: #353b48;
+  box-shadow: 0 0 5px #27ae60;  
+}
+.header .logo {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  font-family: poppins Regular;
+  font-weight: 800;
+}
+.header #search {
+  width: 350px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  color: black;
+  font-size: 1.2rem;
+  font-family: poppins;
+  font-weight: 400;
+}
+.header #search::placeholder {
+  color: black;
+}
+.header #search:focus {
+  border: 2px solid #2ecc71;
+}
+.header ul {
+  display: flex;
+  align-items: center;    
+}
+.header ul li {
+  padding: 0 10px;
+}
+.header ul li a {
+  color: var(--secondary-color);
+  font-family: poppins;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.header ul li a:hover {
+  color: #2ecc71;   
+}
+.header .account {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #27ae60;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: poppins;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.header .account:hover {
+  background-color: #2ecc71;
+}
+.loginBar {
+  width: 300px;
+  height: 250px;
+  right: 0;
+  position: absolute;
+  display: none;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #353b48;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #27ae71;
+}
+.loginBar h2 {
+  font-family: poppins Regular;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #27ae60;
+}
+.loginBar .loginInput {
+  width: 100%;
+  height: 250px;
+  align-items: center;
+  text-align: center;
+}
+.loginBar .loginInput input {
+  width: 90%;
+  height: 30px;
+  margin-top: 10px;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #27ae60;
+  color: white;
+  font-size: 1rem;
+  font-family: poppins Regular;
+  font-weight: 400;
+}
+.loginBar .loginInput input::placeholder {
+  color: #27ae71;
+}
+.loginButton button {
+  align-items: center;
+  text-align: center;
+  background-color: #27ae60;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: poppins;
+  font-weight: 400;
+  margin: 30px;
+}
+.loginButton button:hover {
+  background-color: #2ecc71;
+}
+.loginBar .controle {
+  display: flex;
+  justify-content: space-between;  
+  color: white;  
+  font-family: poppins;
+  text-decoration: underline; 
+}
+.loginBar .controle .regis {
+  color: #27ae60;
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: poppins;
+}
+section {
+  width: 100%;
+  height: 90%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+section .img {
+  width: 50%;
+  height: 100%;
+}
+section .textImg {
+  width: 50%;
+  height: 100%;
+}
