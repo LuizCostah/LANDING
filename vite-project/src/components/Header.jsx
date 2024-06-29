@@ -1,29 +1,16 @@
-import {UserRound} from 'lucide-react'
-import LoginBox from '../utils/LoginBox'
+/* eslint-disable react/prop-types */
 
-
-function Header() {
+export default function Header({children}) {
 
   return(
 
-    <header className="header">
-      <h2 className="logo">InGame</h2>
-      <input type="text" id="search" placeholder='Search'/>
-      <nav className="navBar">
-        <ul>
-          <li><a href="#">Ínicio</a></li>
-          <li><a href="#">Destaques</a></li>
-          <li><a href="#">Parceiros</a></li>
-          <div className="account">
-            <button onClick={LoginBox}>Entrar</button>
-            <UserRound className="font-bold ml-2" size={15} strokeWidth={1} absoluteStrokeWidth />
-          </div>
-        </ul>
-      </nav>
-
+    <header className="flex relative justify-between items-center w-full h-12 bg-black px-40 py-2">
+      <div className="flex justify-between items-center w-1/2">
+        <h2 className="text-white text-3xl font-semibold">LOGO</h2>      
+        <input type="text" className="font-semibold text-xl w-80 h-8 rounded-lg text-center outline-none px-2" placeholder='Search'/>
+      </div>
+      {children}
     </header>
 
   )
 }
-
-export default Header;

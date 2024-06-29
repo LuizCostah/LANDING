@@ -1,4 +1,4 @@
-function LoginBox() {
+export default function LoginFlex() {
 
   const logar = document.querySelector('.loginBar')
 
@@ -9,4 +9,3 @@ function LoginBox() {
   )
 }
 
-export default LoginBox;

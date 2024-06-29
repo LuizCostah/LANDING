@@ -1,19 +1,13 @@
-import ContentHome from './ContentHome';
-import Header from './Header'
-import Login from './Login';
-
-function Layout() {
+/* eslint-disable react/prop-types */
+export default function Layout({children}) {
 
   return (
 
-    <div className="layout">
-      <Header />
-      <Login />
-      <ContentHome />
+    <div className="absolute w-full h-full">
+      {children}
     </div>
 
-  )
+  );
 
 }
 
-export default Layout;
